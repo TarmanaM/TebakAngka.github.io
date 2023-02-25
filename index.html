@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="in">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/stylesheet.css">
+    <link rel="icon" href="assets/image/Logo.png" type="image/png">
+    <title>Game Tebak Angka</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            
+            <img id="logo"src="assets/image/Logo.png" alt="">
+            <h1>TebakAngka</h1>
+        </div>
+        <nav class="container">
+            <a href="#aboutgame">Tentang Game</a>
+            </li>
+            <a href="#tutorgame">Tutorial</a>
+            </li>
+            <a href="#aboutme">Pembuat</a>
+            </li>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <div class="form start">
+                <div id="box" class="box">
+                    <h1>Mari Kita Bermain</h1>
+                    <br>
+                    <input id="playgame" type="submit" value="Ayo!" class="btn">
+                </div>
+                <div id="levelgame" class="levelgame">
+                    <h1>Pilih Levelnya</h1>
+                    <ul>
+                        <li>
+                            <button id="level1">Mudah</button>
+                        </li>
+                        <li>
+                            <button id="level2">Lumayan</button>
+                        </li>
+                        <li>
+                            <button id="level3">Sulit</button>
+                        </li>
+                    </ul>
+                </div>
+                <div id="game" class="form game">
+                    <div id="playing" class="playing">
+                        <div class="combinebox">
+                            <div class="formscore">
+                                <h5>Score : <span id="scorevalue">10</span></h5>
+                                <h5>High Score : <span id="Hscorevalue">none</span></h5>
+                            </div>
+                            <button id="reset" type="reset">Reset</button>
+                        </div>
+                        <div class="combinebox">
+                            <div class="form play">
+                                <img src="assets/image/confused-cat.jpeg " alt="Confused Cat">
+                                <h2 id="statusinput">Ayo Coba Tebak Angka ku</h2>
+                                <input type="number" name="inputnumber" id="inputnumber" placeholder="Ayo tebak angkanya">
+                                <br>
+                                <input id="check" class="btn" type="submit" value="Tebak!!">
+                            </div>
+                            <div id="historyfrm" class="form historyfrm">
+                                <h4>Kamu Telah menebak :</h4>
+                                <div class="maxhistory">
+                                    <h4 id="listhistory"></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <center>
+                        <div id="lose" class="form lose">
+                            <img src="assets/image/Lose.png" alt="Game Over">
+                            <h1>Yah Kamu Gagal</h1>
+                            <p>
+                                Jangan Menyerah ya, ayo main lagi
+                            </p>
+                            <p>
+                                Ternyata Nomornya adalah : <span id="answere">none</span>
+                            </p>
+                            <button class="btn" id="tryagain2">Ayo Main Lagi</button>
+                        </div>
+                        <div id="win" class="form win">
+                            <img src="assets/image/win.png" alt="You Win">
+                            <h2>Wah Selamat!!</h2>
+                            <p>
+                                Kamu benar. <span id="answere1">none</span> adalah nomor rahasia ku
+                            </p>
+                            <p>
+                                Skor kamu adalah <span id="scorevalue1">none</span>
+                            </p>
+                            <p>
+                                Skor terbaikmu : <span id="Hscorevalue1">None</span>
+                            </p>
+                            <button class="btn" id="tryagain1">Ayo Main Lagi</button>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+
+            <article id="aboutgame">
+                <div class="combinebox">
+                <img id="info" src="assets/image/Info.png" alt="logo info">
+                <div class="container-text">
+                <h1>Tentang Game</h1>
+                <p>
+                    Game Tebak Angka adalah permainan tebak menebak angka, jadi nanti akan ada sebuah angka yang dipilih acak atau random diantara angka sesuai tingkat kesulitan yang kamu pilih. lalu nanti akan ada skor 10 dan setiap kamu gagal menebak, skor akan berkurang 1.<br>Ayo Bermain!</p>
+                </div>
+            </div>
+            </article>
+            <article id="tutorgame">
+                <h1>Panduan Bermain</h1>
+                <p>
+                    Untuk memainkan game ini mudah sekali, kalian dapat menekan tombol <strong>Ayo!</strong> pada layar permainan.
+                    Lalu terdapat tiga Level yaitu sebagai berikut : <br>
+                </p>
+                <div class="combinebox1">
+                <div class="card">
+                    <center>
+                    <h4 id="cd1">Mudah</h4>
+                    <br>
+                    </center>
+                    <p>Untuk Level Lumayan, Kamu akan menebak angka dari kisaran <strong>1 - 20</strong>. Lalu
+                        kamu akan diberi sebuah history dari angka yang sudah kamu isi dan pengurangan nilainya yaitu 1
+                        setiap kamu salah menjawabnya. lalu jika angka salah dijawab lagi maka tidak akan berkurang nilainya</p>
+                    
+                </div>
+                <div class="card">
+                    <center>
+                    <h4 id="cd2">Lumayan</h4>
+                    </center>
+                    <br>
+                    <p>Untuk Level Lumayan, Kamu akan menebak angka dari kisaran <strong>1 - 100</strong>. Lalu
+                        kamu akan diberi sebuah history dari angka yang sudah kamu isi dan pengurangan nilainya yaitu 1
+                        setiap kamu salah menjawabnya. lalu jika angka salah dijawab lagi maka tidak akan berkurang nilainya</p>
+                </div>
+                <div class="card">
+                    <center>
+                    <h4 id="cd3">Sulit</h4>
+                    <br>
+                    </center>
+                    <p>Untuk Level Sulit, Kamu akan menebak angka dari kisaran <strong>1 - 100</strong>. Lalu
+                    kamu tidak akan diberi sebuah history dari angka yang sudah kamu isi dan pengurangan nilainya yaitu 2
+                    setiap kamu salah menjawabnya. Selain itu jika kamu mengisikan angka yang sama yang salah, kamu akan tetap dikurangi</p>
+                </div>
+                </div>
+                <p>Didalam game terdapat papan score yang menunjukan berapa score kamu, lalu kamu diberikan 10 dan setiap kesalahan kamu akan berkurang
+                    lalu akan ada higscore yang telah kamu dapatkan, lalu ada tombol reset untuk mengulang semua permainan dan itu akan
+                    menghapus hscore kamu.
+                </p>
+            </article>
+        </div>
+        <center>
+        <aside id="aboutme">
+            <h1>Creator</h1>
+            <img src="assets/image/Profile.jpeg" alt="profilepict">
+            <h2>Isa Tarmana Mustopa</h2>
+                <p>
+                    Bangkit Cloud Computing
+                </p>
+                <p>
+                    Gunadarma University
+                </p>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/isa_tarmana/"><img src="assets/image/instagram.svg" alt="myinstagram"></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/TarmanaM"><img src="assets/image/github.svg" alt="mygithub"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/isatarmanamustopa/"><img src="assets/image/linkedin.svg" alt="mylinkedin"></a>
+                    </li>
+                    
+                </ul>
+                <p> isatarmanamustopa54@gmail.com</p>
+        </aside>
+    </center>
+
+    </main>
+    <footer>
+        <p>
+            Game tebak angka &copy; 2023, Isa Tarmana Mustopa
+        </p>
+    </footer>
+        <!-- Back To Top Start -->
+        <div id='ignielToTop'/>
+        <!-- Back To Top End -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
