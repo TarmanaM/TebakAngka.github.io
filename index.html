@@ -211,6 +211,29 @@
         <div id='ignielToTop'/>
         <!-- Back To Top End -->
     <script src="assets/js/script.js"></script>
+            <script>
+
+                function generateWhatsAppMessage() {
+  var foodName = document.getElementById("foodName").value;
+  var portion = document.getElementById("portion").value;
+  var note = document.getElementById("note").value;
+
+  var whatsappMessage = "Halo, saya ingin memesan:\n";
+  whatsappMessage += "Nama Makanan: " + foodName + "\n";
+  whatsappMessage += "Porsi: " + portion + "\n";
+  whatsappMessage += "Keterangan: " + (note || "Tidak ada keterangan tambahan.");
+
+  // Encode WhatsApp message for URL
+  var encodedMessage = encodeURIComponent(whatsappMessage);
+
+  // WhatsApp URL
+  var whatsappUrl = "https://wa.me/6281220952593/?text=" + encodedMessage;
+
+  // Redirect to WhatsApp
+  window.open(whatsappUrl);
+}
+
+            </script>
 </body>
 
 </html>
