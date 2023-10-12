@@ -185,3 +185,27 @@ eval (function(p,a,c,k,e,d){
         if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};
         while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('f 7=["\\h\\a\\g\\h\\F","\\C\\h\\w\\c\\a\\a\\l\\c\\v","\\e\\c\\h\\K\\p\\9\\d\\b\\m\\a\\9\\p\\9\\d\\b","\\G\\c\\e\\q","\\J\\e\\e\\m\\I\\9\\d\\b\\H\\g\\C\\b\\9\\d\\9\\w","\\g\\u\\d\\g\\9\\a\\l\\c\\l\\c\\v","\\u\\9\\b\\m\\a\\9\\p\\9\\d\\b\\M\\q\\U\\e"];8[7[6]](7[5])[7[4]](7[0],j x(){f i=8[7[2]][7[1]]||8[7[3]][7[1]];o(k<=0){s};f r=0-i;f t=r/k*X;L(j(){8[7[3]][7[1]]=8[7[2]][7[1]]=i+t;o(i==0){s};x(8[7[3]],0,k)},P)},Q);B.Y(\'O\',j(){o(B.N>=n||8.R.z>=n||8.W.z>=n){8.y(\'A\').E.D=\'V\'}T{8.y(\'A\').E.D=\'S\'}});',61,61,'|||||||_0x3e17|document|x65|x6C|x74|x6F|x6E|x64|var|x69|x63|_0x2ceax2|function|quickontop|x54|x45|distancetop|if|x6D|x79|_0x2ceax3|return|_0x2ceax4|x67|x70|x72|ignielScroll|getElementById|scrollTop|ignielToTop|window|x73|display|style|x6B|x62|x4C|x76|x61|x75|setTimeout|x42|pageYOffset|scroll|10|false|documentElement|none|else|x49|block|body|50|addEventListener'.split('|'),0,{}));
 
+
+// FOrm  Pemesanana Whasapp 
+function generateWhatsAppMessage() {
+  var foodName = document.getElementById("foodName").value;
+  var portion = document.getElementById("portion").value;
+  var note = document.getElementById("note").value;
+
+  var whatsappMessage = "Halo, saya ingin memesan:\n";
+  whatsappMessage += "Nama Makanan: " + foodName + "\n";
+  whatsappMessage += "Porsi: " + portion + "\n";
+  whatsappMessage += "Keterangan: " + (note || "Tidak ada keterangan tambahan.");
+
+  // Encode WhatsApp message for URL
+  var encodedMessage = encodeURIComponent(whatsappMessage);
+
+  // WhatsApp URL
+  var whatsappUrl = "https://wa.me/6281220952593/?text=" + encodedMessage;
+
+  // Redirect to WhatsApp
+  window.open(whatsappUrl);
+}
+
+
+
