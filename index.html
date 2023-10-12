@@ -24,9 +24,7 @@
             </li>
             <a href="#aboutme">Pembuat</a>
             </li>
-            </li>
-            <a href="https://wa.me/6281220952593/?text=Salam%20%21%20Saya%20tertarik%20dengan%20produk%20Anda." target="_blank">Pesan Lewat WhatsApp</a>
-            </li>
+            
         </nav>
     </header>
     <main>
@@ -185,6 +183,21 @@
                     
                 </ul>
                 <p> isatarmanamustopa54@gmail.com</p>
+        </aside>
+        <aside id="aboutme">
+            <h1>Form Pemesanan</h1>
+              <form id="orderForm">
+  <label for="foodName">Nama Makanan:</label>
+  <input type="text" id="foodName" name="foodName" required><br><br>
+  
+  <label for="portion">Porsi:</label>
+  <input type="number" id="portion" name="portion" required><br><br>
+  
+  <label for="note">Keterangan:</label>
+  <textarea id="note" name="note"></textarea><br><br>
+  
+  <button type="button" onclick="generateWhatsAppMessage()">Pesan ke WhatsApp</button>
+</form>
         </aside>
     </center>
 <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="efc84c4d-e40d-4d2a-8c87-49f1d145b32c";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
